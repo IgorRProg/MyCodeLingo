@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    color: #292929;
+}
+
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome-site {
+    display: flex;
+    flex-direction: column;
+    font-size: 64px;
+    color: #72d1ff;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EAEAEA;
+    padding: 15px;
+    text-align: center;
+}
+
+p {
+    margin: 20px;
+    text-align: justify;
+}
+
+#rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EAEAEA;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.logotipo-utfpr {
+    margin: 15px;
+    width: 15%;
+    height: auto;
+}
+
+.programando {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: -50px;
+}
+
+@media screen and (max-width: 900px) {
+    .programando {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nome-site {
+        font-size: 48px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .programando {
+        width: 90%;
+    }
+}
