@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -9,6 +10,7 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 
 #wrapper {
@@ -20,82 +22,1070 @@ body {
     flex-direction: column;
 }
 
-.nome-site {
+#cabecalho {
     display: flex;
-    flex-direction: column;
-    font-size: 64px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nome-site h1 {
+    font-size: 40px;
+    margin: 0;
+    padding: 20px;
+    margin-right: auto; /* Move o nome do site completamente para a esquerda */
+    text-align: center;
+}
+
+.nome-site a {
+    text-decoration: none;
     color: #72d1ff;
     text-shadow:
         -1px -1px 0 #000,  
         1px -1px 0 #000,
         -1px 1px 0 #000,
         1px 1px 0 #000;
-    margin: 0 auto;
-    padding: 10px;
 }
 
-h1 {
+.menu {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    list-style: none; /* Remove os marcadores padrão dos itens da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin-left: auto;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 20px; /* Espaçamento entre os itens */
+}
+
+.menu li a:hover {
+    color: #0077ff;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu-rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    list-style: none; /* Remove os marcadores padrão dos itens da lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+.menu-rodape h1 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-rodape ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 30px;
-    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
-h2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #EAEAEA;
-    padding: 15px;
-    text-align: center;
+.menu-rodape li {
+    margin: 10px 0; /* Espaçamento entre os itens */
+    list-style: none;
 }
 
-p {
-    margin: 20px;
-    text-align: justify;
+.menu-rodape li a:hover {
+    color: #0077ff;
+}
+
+.menu-rodape a {
+    text-decoration: none;
 }
 
 #rodape {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #EAEAEA;
-    margin-top: 20px;
     text-align: center;
+    padding: 10px;
+    background-color: #e0e0e0;
 }
 
 .logotipo-utfpr {
-    margin: 15px;
     width: 15%;
+    height: auto;
+    margin: 20px;
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.estudante {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding-right: 25px;
+    margin-bottom: 50px;
+}
+
+.estudante img {
+    width: 100%;
     height: auto;
 }
 
-.programando {
+h1 {
+    font-size: 42px;
+    margin: 0; /* Remove a margem padrão do h1 */
+    padding: 20px;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 900;
+}
+
+#secao-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(to right, #72d1ff, #0077ff);
+    min-height: 100vh;
+}
+
+#container-botao2 {
     display: flex;
     flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+#btn-comecar {
+    padding: 14.5px 40px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #00e676;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.5s;
+    position: relative;
+    -webkit-transition: all 0.5s;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#btn-comecar:hover {
+    background-color: #00c853; /* Verde vibrante mais escuro para o estado hover */
+    box-shadow: 0 0 20px #00c85350; /* Sombra com a cor mais escura */
+    transform: scale(1.1);
+}
+
+#btn-comecar:active {
+    background-color: #00b74a; /* Verde ainda mais escuro para o estado ativo */
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+#secao-2 {
+    display: flex;
+    flex-direction: column; /* Faz com que os filhos sejam dispostos verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    background-color: #f1f1f1;
+    min-height: 100vh;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column; /* Faz com que o conteúdo seja disposto verticalmente */
+}
+
+.breadcrumb {
+    display: flex;
+    font-size: 20px;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    width: 100%; /* Garante que a largura seja 100% do contêiner pai */
+    box-sizing: border-box; /* Inclui padding e bordas na largura e altura total */
+    padding-left: 10px;
+    margin-top: auto;
+    list-style: none;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+}
+
+.secao-atual {
+    color: #8c8c8c;
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb li::after {
+    content: '>';
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.breadcrumb li:last-child::after {
+    content: '';
+}
+
+.container-linguagens {
+    display: flex;
+    flex-direction: row; /* Faz com que a imagem e o texto sejam dispostos horizontalmente */
+    align-items: center; /* Alinha a imagem e o texto verticalmente no centro */
+}
+
+.logo-linguagens {
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.logo-linguagens img {
+    width: 110%;
+}
+
+.container-texto2 {
+    line-height: 1.4; /* Melhora a legibilidade do texto */
+    text-align: justify;
+    margin-left: 90px;
+    margin-right: 30px;
+}
+
+.container-texto2 h2 {
+    margin-left: 20px;
+}
+
+p {
+    margin: 20px;
+}
+
+.ir-cursos a {
+    text-decoration: none;
+}
+
+.ir-cursos a:hover {
+    color: #0077ff;
+}
+
+#secao-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    min-height: 100vh;
+}
+
+.recursos-complementares {
+    display: flex;
+    flex-direction: column; /* Faz com que o conteúdo seja disposto verticalmente */
+}
+
+.recursos-h2 {
+    font-size: 30px;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    width: 100%; /* Garante que a largura seja 100% do contêiner pai */
+    box-sizing: border-box; /* Inclui padding e bordas na largura e altura total */
+    padding-left: 10px;
+    margin-top: auto;
+}
+
+.container-texto3 {
+    line-height: 1.4; /* Melhora a legibilidade do texto */
+    text-align: justify;
+    margin-right: 30%;
+    margin-left: 30px;
+}
+
+.container-link {
+    display: flex;
+    flex-direction: row; /* Faz com que a imagem e o texto sejam dispostos horizontalmente */
+    align-items: center; /* Alinha a imagem e o texto verticalmente */
+}
+
+.link img {
+    width: 320px;
+    height: auto;
+    margin-left: -350px;
+    margin-bottom: 300px;
+}
+
+.menu-complementar {
+    display: flex; /* Define o contêiner como flexível */
+    align-items: center; /* Centraliza os itens verticalmente */
+    font-size: 24px;
+}
+
+.menu-complementar ol {
+    list-style: none;
+    padding: 25px;
     margin: 0 auto;
-    width: 50%;
-    margin-top: -50px;
 }
 
-@media screen and (max-width: 900px) {
-    .programando {
-        width: 70%;
-    }
+.menu-complementar li {
+    margin-bottom: 20px; /* Espaçamento entre os itens da lista */
+    padding: 10px;
+    font-size: 24px;
+    background: linear-gradient(to right, #333, #665);
+    color: #f1f1f1;
 }
 
-@media screen and (max-width: 480px) {
+.menu-complementar li:nth-child(even) {
+    background: linear-gradient(to right, #665, #999);
+}
+
+.menu-complementar a {
+    text-decoration: none;
+}
+
+.menu-complementar li:hover {
+    filter: hue-rotate(180deg);
+    transition: all 1s ease-in;
+    color: orange;
+}
+
+.menu-complementar li:active {
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    transform: scale(0.95);
+}
+
+/* Banner de Cookies */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Organiza itens verticalmente */
+    align-items: center; /* Alinha os itens horizontalmente no centro */
+    display: none; /* Inicialmente escondido */
+    z-index: 1000; /* Garante que o banner fique sobre outros conteúdos */
+    border-top: 1px solid #888;
+}
+  
+  /* Estilos adicionais */
+.cookie-banner p {
+    margin: 5px 0; /* Margem do texto */
+    color: #292929;    /* Cor do texto */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.cookie-banner a {
+    color: #0077ff; /* Cor dos links */
+    text-decoration: underline; /* Sublinhado dos links */
+}
+  
+.cookie-banner button {
+    border: none; /* Remove bordas dos botões */
+    color: white; /* Cor do texto dos botões */
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    margin: 5px; /* Margem ao redor dos botões */
+    cursor: pointer; /* Muda o cursor ao passar sobre os botões */
+}  
+
+#accept-all {
+    background-color: #00e676;
+    color: #292929;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#accept-all:hover {
+    background-color: #00c853; /* Verde vibrante mais escuro para o estado hover */
+}
+
+#manage-preferences {
+    background-color: #00b0ff;
+    color: #292929;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#manage-preferences:hover {
+    background-color: #0091ea; /* Verde vibrante mais escuro para o estado hover */
+}
+
+#close-btn {
+    background-color: #ff3d00;
+    color: #292929;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#close-btn:hover {
+    background-color: #c62828; /* Verde vibrante mais escuro para o estado hover */
+}
+
+/* Modal Cookies */
+.modal {
+    display: none; /* Oculto por padrão */
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal h2 {
+    text-align: center;
+}
+
+#preferences-form {
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #f1f1f1;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+  
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close-modal:hover,
+.close-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
+  
+.modal div {
+    margin-bottom: 15px;
+}
+  
+.modal button {
+    background-color: #00e676;
+    border: none;
+    color: #292929;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.modal button:hover {
+    background-color: #00c853; /* Verde vibrante mais escuro para o estado hover */
+}
+
+#secao-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    min-height: 100vh;
+}
+
+#secao-4 p {
+    text-align: center;
+}
+
+.container-cursos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+    justify-content: space-evenly; /* Alinha os itens horizontalmente e adiciona espaçamento */
+    text-align: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.container-cursos img {
+    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 32px;
+    max-width: 90%;
+    height: auto;
+}
+
+.container-cursos img:hover {
+    transform: scale(1.1) rotate(2deg); /* Aumenta e gira a imagem ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Intensifica a sombra ao passar o mouse */
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.3), transparent); /* Efeito de reflexo */
+    opacity: 0.9; /* Torna o reflexo visível ao passar o mouse */
+    transition: opacity 0.3s ease-in; /* Transição suave para o efeito de hover */
+}
+
+.container-cursos figcaption {
+    text-align: center;
+    margin: 15px;
+}
+
+.img-ingles,
+.img-html,
+.img-css,
+.img-js {
+    flex: 0 1 320px; /* Ajuste o valor conforme necessário */
+    margin: 10px; /* Ajuste para garantir espaçamento entre os itens */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura */
+}
+
+.container-cursos a {
+    text-decoration: none;
+    max-width: 340px;
+}
+
+.container-texto4 {
+    background-color: #f1f1f1;
+    text-align: justify;
+}
+
+.container-texto4 h2 {
+    text-align: center;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    width: 100%; /* Garante que a largura seja 100% do contêiner pai */
+    box-sizing: border-box; /* Inclui padding e bordas na largura e altura total */
+    margin-top: auto;
+}
+
+.container-texto4 h3 {
+    margin: 20px;
+}
+
+#secao-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    min-height: 100vh;
+}
+
+.container-texto5 {
+    flex: 1; /* Faz com que o texto ocupe o espaço restante */
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.container-aside {
+    display: flex;
+    align-items: flex-start;
+}
+
+.fechar-botao {
+    display: none;
+}
+
+#informacoes-adicionais {
+    background: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    overflow-y: auto; /* Permite rolagem se o conteúdo for maior */
+    width: 250px;
+    height: 100vh; /* Altura total da viewport */
+}
+
+#informacoes-adicionais a {
+    text-decoration: none;
+}
+
+#informacoes-adicionais a:hover {
+    text-decoration: underline;
+}
+
+#abrir-aside {
+    display: none;
+}
+
+#conteudo-curso {
+    padding: 15px;
+}
+
+/* Responsividade Página Principal Celulares até 480px de largura */
+@media (max-width: 480px) {
+    /* Menu Principal */
     .nome-site {
-        font-size: 48px;
+        font-size: 22px;
+        margin-right: auto;
     }
-    h1 {
-        font-size: 24px;
+
+    .menu li {
+        display: flex;
+        font-size: 14px;
+        margin-left: auto;
+        margin-top: 2px;
     }
-    h2 {
-        font-size: 18px;
+
+    .breadcrumb {
+        font-size: 16px;
     }
-    .programando {
+    
+    /* Seção 1 */
+    #secao-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-texto {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .container-texto h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .estudante img {
+        margin: 0 auto;
+    }
+
+    /* Seção 2 */
+    #secao-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-linguagens {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-linguagens {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .logo-linguagens img {
         width: 90%;
+        height: auto;
+    }
+
+    .container-texto2 {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .container-texto2 h2 {
+        text-align: center;
+        margin-bottom: -2px;
+        margin-top: -2px;
+        margin: 0 auto;
+    }
+
+    /* Seção 3 */
+    #secao-3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-link {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-texto3 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .menu-complementar li {
+        padding: 2px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .link {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .link img {
+        width: 75%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Rodapé */
+    .logotipo-utfpr {
+        width: 30%;
+    }
+
+    .menu-rodape {
+        font-size: 14px;
+    }
+
+    .p-rodape {
+        font-size: 14px;
+    }
+
+    .container-botao {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+/* Responsividade Página Principal Tablets e Desktops até 1280px de largura */
+@media (min-width: 768px) and (max-width: 1280px) {
+    /* Menu Principal */
+    .nome-site {
+        font-size: 28px; /* Ajuste o tamanho da fonte */
+        margin-right: auto;
+    }
+
+    .menu li {
+        display: flex;
+        font-size: 16px; /* Ajuste o tamanho da fonte */
+        margin-left: auto;
+        margin-top: 4px; /* Aumente o espaçamento superior */
+    }
+
+    .breadcrumb {
+        font-size: 18px; /* Ajuste o tamanho da fonte */
+    }
+    
+    /* Seção 1 */
+    #secao-1 {
+        display: flex;
+        flex-direction: column;
+        padding: 10px; /* Adicione um pouco de preenchimento */
+    }
+
+    .container-texto {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px; /* Ajuste as margens */
+        margin-bottom: 20px;
+    }
+
+    .container-texto h1 {
+        font-size: 36px; /* Ajuste o tamanho da fonte */
+        text-align: center;
+    }
+
+    .estudante img {
+        margin: 0 auto;
+        width: 70%; /* Ajuste a largura da imagem */
+        height: auto;
+    }
+
+    /* Seção 2 */
+    #secao-2 {
+        display: flex;
+        flex-direction: column;
+        padding: 10px; /* Adicione um pouco de preenchimento */
+    }
+
+    .container-linguagens {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-linguagens {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .logo-linguagens img {
+        width: 60%; /* Ajuste a largura da imagem */
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .container-texto2 {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .container-texto2 h2 {
+        text-align: center;
+        margin: 0;
+    }
+
+    /* Seção 3 */
+    #secao-3 {
+        display: flex;
+        flex-direction: column;
+        padding: 10px; /* Adicione um pouco de preenchimento */
+    }
+
+    .container-link {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-texto3 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .menu-complementar li {
+        padding: 4px; /* Ajuste o preenchimento */
+        font-size: 18px; /* Ajuste o tamanho da fonte */
+        text-align: center;
+    }
+
+    .link {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px; /* Ajuste a margem inferior */
+    }
+
+    .link img {
+        width: 70%; /* Ajuste a largura da imagem */
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Rodapé */
+    .logotipo-utfpr {
+        width: 20%; /* Ajuste a largura da logotipo */
+    }
+
+    .menu-rodape {
+        font-size: 16px; /* Ajuste o tamanho da fonte */
+    }
+
+    .p-rodape {
+        font-size: 16px; /* Ajuste o tamanho da fonte */
+    }
+
+    .container-botao {
+        display: flex;
+        flex-direction: row; /* Ajuste para coluna em vez de linha */
+        align-items: center;
+    }
+}
+
+/* Responsividade Página Principal Celulares em Modo Paisagem até 768px de largura */
+@media (min-width: 480px) and (max-width: 768px) and (orientation: landscape) {
+    /* Menu Principal */
+    .nome-site {
+        font-size: 28px; /* Ajuste o tamanho da fonte */
+        margin-right: auto;
+    }
+
+    .menu li {
+        display: flex;
+        font-size: 16px; /* Ajuste o tamanho da fonte */
+        margin-left: auto;
+        margin-top: 4px; /* Aumente o espaçamento superior */
+    }
+
+    .breadcrumb {
+        font-size: 18px; /* Ajuste o tamanho da fonte */
+    }
+    
+    /* Seção 1 */
+    #secao-1 {
+        display: flex;
+        flex-direction: column;
+        padding: 10px; /* Adicione um pouco de preenchimento */
+    }
+
+    .container-texto {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px; /* Ajuste as margens */
+        margin-bottom: 20px;
+    }
+
+    .container-texto h1 {
+        font-size: 36px; /* Ajuste o tamanho da fonte */
+        text-align: center;
+    }
+
+    .estudante img {
+        margin: 0 auto;
+        width: 70%; /* Ajuste a largura da imagem */
+        height: auto;
+    }
+
+    /* Seção 2 */
+    #secao-2 {
+        display: flex;
+        flex-direction: column;
+        padding: 10px; /* Adicione um pouco de preenchimento */
+    }
+
+    .container-linguagens {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-linguagens {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .logo-linguagens img {
+        width: 60%; /* Ajuste a largura da imagem */
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .container-texto2 {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .container-texto2 h2 {
+        text-align: center;
+        margin: 0;
+    }
+
+    /* Seção 3 */
+    #secao-3 {
+        display: flex;
+        flex-direction: column;
+        padding: 10px; /* Adicione um pouco de preenchimento */
+    }
+
+    .container-link {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-texto3 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .menu-complementar li {
+        padding: 4px; /* Ajuste o preenchimento */
+        font-size: 18px; /* Ajuste o tamanho da fonte */
+        text-align: center;
+    }
+
+    .link {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px; /* Ajuste a margem inferior */
+    }
+
+    .link img {
+        width: 60%; /* Ajuste a largura da imagem */
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Rodapé */
+    .logotipo-utfpr {
+        width: 25%; /* Ajuste a largura da logotipo */
+    }
+
+    .menu-rodape {
+        font-size: 16px; /* Ajuste o tamanho da fonte */
+    }
+
+    .p-rodape {
+        font-size: 16px; /* Ajuste o tamanho da fonte */
+    }
+
+    .container-botao {
+        display: flex;
+        flex-direction: row; /* Ajuste para coluna em vez de linha */
+        align-items: center;
+    }
+}
+
+/* Responsividade Página Cursos Celulares até 480px de largura */
+@media (max-width: 480px) {
+    #secao-4 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-cursos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-cursos img {
+        width: 75%;
+        height: auto;
+    }
+}
+
+/* Responsividade Página Cursos Tablets e Desktops até 1280px de largura */
+@media (min-width: 768px) and (max-width: 1280px) {
+    #secao-4 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-cursos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* Responsividade Página Inglês Instrumental Celulares até 480px de largura */
+@media (max-width: 480px) {
+    #secao-5 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #informacoes-adicionais {
+        display: none;
+        width: 100%;
+    }
+    
+    #abrir-aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        border: none; /* Remove a borda padrão */
+        background: none; /* Remove a cor de fundo padrão */
+        cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+        margin-top: auto;
+    }
+
+    #abrir-aside img {
+        width: 16px; /* Ajuste o tamanho da imagem conforme necessário */
+        height: 16px; /* Ajuste o tamanho da imagem conforme necessário */
+    }
+
+    .fechar-botao {
+        display: flex;
+        background-color: #ff0000; /* Cor de fundo do botão */
+        color: #ffffff; /* Cor do texto do botão */
+        border: none;
+        padding: 5px 10px;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 1001; /* Garante que o botão esteja acima do conteúdo */
     }
 }

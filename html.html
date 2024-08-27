@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCodeLingo | HTML</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <section id="wrapper">
+        <header id="cabecalho">
+            <h1 class="nome-site"><a href="index.html">MyCodeLingo</a></h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="cursos.html#secao-4" class="scroll-link" data-target="secao-4">Cursos</a></li>
+                    <li><a href="index.html#secao-2" class="scroll-link" data-target="secao-2">Sobre</a></li>
+                    <li><a href="index.html#secao-3" class="scroll-link" data-target="secao-3">Recursos
+                            Complementares</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="conteudo">
+            <section id="secao-5">
+                <div class="container-aside">
+                    <aside id="informacoes-adicionais">
+                        <button id="fechar-aside" class="fechar-botao">X</button>
+                        <h2>Sumário</h2>
+                        <ul>
+                            <li><a href="#introducao">Introdução</a></li>
+                            <li>
+                                <a href="#secao1">Seção 1: Estrutura Básica do HTML</a>
+                                <ul>
+                                    <li><a href="#secao1-1">1.1 Estrutura de um Documento HTML</a></li>
+                                    <li><a href="#secao1-2">1.2 Tags e Atributos Comuns</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#secao2">Seção 2: Novidades do HTML5</a>
+                                <ul>
+                                    <li><a href="#secao2-1">2.1 Novas Tags e Elementos</a></li>
+                                    <li><a href="#secao2-2">2.2 APIs e Recursos do HTML5</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#secao3">Seção 3: Boas Práticas em HTML5</a>
+                                <ul>
+                                    <li><a href="#secao3-1">3.1 Acessibilidade e Semântica</a></li>
+                                    <li><a href="#secao3-2">3.2 Validação e Compatibilidade</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#secao4">Seção 4: Recursos Adicionais</a>
+                                <ul>
+                                    <li><a href="#secao4-1">4.1 Links para Documentação Oficial</a></li>
+                                    <li><a href="#secao4-2">4.2 Tutoriais e Cursos Recomendados</a></li>
+                                    <li><a href="#secao4-3">4.3 Ferramentas e Editores de HTML</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </aside>
+                    <div class="container-texto5">
+                        <ul class="breadcrumb">
+                            <button id="abrir-aside">
+                                <img src="img/sumario.png" alt="Sumário">
+                            </button>
+                            <li><a href="index.html#cabecalho" class="scroll-link" data-target="cabecalho">Início</a>
+                            </li>
+                            <li><a href="cursos.html#secao-4" class="scroll-link" data-target="secao-4">Cursos</a></li>
+                            <li class="secao-atual">HTML</li>
+                        </ul>
+                        <section id="conteudo-curso">
+                            <h1>Introdução ao HTML5</h1>
+                            <section>
+                                <h2>Introdução</h2>
+                                <p>Bem-vindo ao curso de Introdução ao HTML5! Este curso é projetado para fornecer uma
+                                    compreensão sólida dos conceitos básicos do HTML5, a linguagem fundamental para a
+                                    criação de páginas web. Lançado oficialmente em 2014, o HTML5 trouxe várias melhorias e novos recursos em relação às versões anteriores, facilitando a criação de sites modernos, interativos e acessíveis. Entre suas inovações, destacam-se novas tags semânticas, suporte aprimorado para multimídia, gráficos e aplicativos web.</p>
+                            </section>
+
+                            <section id="secao1">
+                                <h2>Seção 1: Estrutura Básica do HTML</h2>
+
+                                <section id="secao1-1">
+                                    <h3>1.1 Estrutura de um Documento HTML</h3>
+                                    <p>Todo documento HTML começa com uma estrutura básica que inclui as tags principais
+                                        como <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, e <code>&lt;body&gt;</code>.
+                                        Entender essa estrutura é essencial para criar páginas HTML válidas e bem
+                                        formatadas.</p>
+                                    <ul>
+                                        <li><strong>&lt;html&gt;:</strong> A tag raiz que envolve todo o conteúdo do
+                                            documento.</li>
+                                        <li><strong>&lt;head&gt;:</strong> Contém metadados sobre o documento, como o
+                                            título e links para folhas de estilo.</li>
+                                        <li><strong>&lt;title&gt;:</strong> Define o título da página, exibido na aba do
+                                            navegador.</li>
+                                        <li><strong>&lt;body&gt;:</strong> Contém o conteúdo visível da página, como
+                                            texto, imagens e links.</li>
+                                    </ul>
+                                </section>
+
+                                <section id="secao1-2">
+                                    <h3>1.2 Tags e Atributos Comuns</h3>
+                                    <p>O HTML utiliza tags e atributos para definir o conteúdo e a estrutura das páginas
+                                        web. Aqui estão algumas tags e atributos comuns:</p>
+                                    <ul>
+                                        <li><strong>&lt;p&gt;:</strong> Define um parágrafo de texto.</li>
+                                        <li><strong>&lt;a&gt;:</strong> Cria um link para outra página ou recurso.</li>
+                                        <li><strong>&lt;img&gt;:</strong> Insere uma imagem na página.</li>
+                                        <li><strong>&lt;h1&gt; a &lt;h6&gt;:</strong> Define cabeçalhos de diferentes níveis.</li>
+                                    </ul>
+                                </section>
+                            </section>
+
+                            <section id="secao2">
+                                <h2>Seção 2: Novidades do HTML5</h2>
+
+                                <section id="secao2-1">
+                                    <h3>2.1 Novas Tags e Elementos</h3>
+                                    <p>O HTML5 introduziu várias novas tags e elementos que facilitam a criação de
+                                        páginas web ricas e interativas. Algumas das principais novidades incluem:</p>
+                                    <ul>
+                                        <li><strong>&lt;article&gt;:</strong> Define um conteúdo independente e auto-suficiente.</li>
+                                        <li><strong>&lt;section&gt;:</strong> Define uma seção temática no documento.</li>
+                                        <li><strong>&lt;nav&gt;:</strong> Define uma seção de navegação.</li>
+                                        <li><strong>&lt;footer&gt;:</strong> Define o rodapé de um documento ou seção.</li>
+                                    </ul>
+                                </section>
+
+                                <section id="secao2-2">
+                                    <h3>2.2 APIs e Recursos do HTML5</h3>
+                                    <p>O HTML5 também trouxe novas APIs e recursos para criar páginas web mais dinâmicas e
+                                        interativas. Exemplos incluem:</p>
+                                    <ul>
+                                        <li><strong>Canvas:</strong> Permite desenhar gráficos e imagens dinâmicas.</li>
+                                        <li><strong>Local Storage:</strong> Armazena dados localmente no navegador.</li>
+                                        <li><strong>Geolocation:</strong> Obtém a localização geográfica do usuário.</li>
+                                    </ul>
+                                </section>
+                            </section>
+
+                            <section id="secao3">
+                                <h2>Seção 3: Boas Práticas em HTML5</h2>
+
+                                <section id="secao3-1">
+                                    <h3>3.1 Acessibilidade e Semântica</h3>
+                                    <p>Garantir que suas páginas HTML sejam acessíveis e semanticamente corretas é fundamental
+                                        para criar uma web inclusiva. Algumas práticas recomendadas incluem:</p>
+                                    <ul>
+                                        <li><strong>Uso de Tags Semânticas:</strong> Utilizar tags que refletem o significado
+                                            do conteúdo.</li>
+                                        <li><strong>Texto Alternativo:</strong> Fornecer texto alternativo para imagens e
+                                            outros elementos não textuais.</li>
+                                        <li><strong>Contraste de Cores:</strong> Garantir que o texto seja legível com bom
+                                            contraste em relação ao fundo.</li>
+                                    </ul>
+                                </section>
+
+                                <section id="secao3-2">
+                                    <h3>3.2 Validação e Compatibilidade</h3>
+                                    <p>Validar seu código HTML e garantir a compatibilidade com diferentes navegadores ajuda
+                                        a evitar problemas e garante uma boa experiência para os usuários. Utilize ferramentas
+                                        de validação e teste suas páginas em diferentes navegadores.</p>
+                                </section>
+                            </section>
+
+                            <section id="secao4">
+                                <h2>Seção 4: Recursos Adicionais</h2>
+                            
+                                <section id="secao4-1">
+                                    <h3>4.1 Links para Documentação Oficial</h3>
+                                    <p>Aqui estão alguns recursos valiosos para documentação e aprendizado sobre HTML5:</p>
+                                    <ul>
+                                        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>: Excelente recurso para aprender sobre HTML5, com tutoriais e documentação detalhada.</li>
+                                        <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">W3Schools</a>: Outro ótimo site para aprender HTML5, com exemplos práticos e exercícios interativos.</li>
+                                    </ul>
+                                </section>
+                            
+                                <section id="secao4-2">
+                                    <h3>4.2 Tutoriais e Cursos Recomendados</h3>
+                                    <p>Para aprofundar seus conhecimentos, considere os seguintes tutoriais e cursos:</p>
+                                    <ul>
+                                        <li><a href="https://www.codecademy.com/learn/learn-html" target="_blank" rel="noopener noreferrer">Codecademy HTML Course</a>: Curso interativo que ensina HTML5 desde o básico até conceitos avançados.</li>
+                                        <li><a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" target="_blank" rel="noopener noreferrer">Coursera HTML, CSS, and Javascript for Web Developers</a>: Curso abrangente que cobre HTML5, CSS e JavaScript.</li>
+                                    </ul>
+                                </section>
+                            
+                                <section id="secao4-3">
+                                    <h3>4.3 Ferramentas e Editores de HTML</h3>
+                                    <p>Estas ferramentas e editores são úteis para o desenvolvimento com HTML:</p>
+                                    <ul>
+                                        <li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a>: Um editor de código fonte poderoso e gratuito, ideal para desenvolvimento web.</li>
+                                        <li><a href="https://www.sublimetext.com/" target="_blank" rel="noopener noreferrer">Sublime Text</a>: Editor de texto rápido e sofisticado para código, marcado e prosa.</li>
+                                        <li><a href="https://atom.io/" target="_blank" rel="noopener noreferrer">Atom</a>: Um editor de texto hackável para o século 21, desenvolvido pelo GitHub.</li>
+                                    </ul>
+                                </section>
+                                <h2><a href="quiz-html.html">Testar meus conhecimentos no Quiz</a></h2>
+                            </section>                            
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="rodape">
+            <img class="logotipo-utfpr" src="img/logotipo-utfpr.png" alt="Logotipo UTFPR">
+            <p class="p-rodape">© 2024 MyCodeLingo. Todos os direitos reservados.</p>
+            <nav class="menu-rodape">
+                <h2 class="rodape-h2">Acesso rápido</h2>
+                <ul>
+                    <li><a href="index.html#cabecalho" class="scroll-link" data-target="cabecalho">Início</a></li>
+                    <li><a href="cursos.html#secao-4" class="scroll-link" data-target="secao-4">Cursos</a></li>
+                    <li><a href="index.html#secao-2" class="scroll-link" data-target="secao-2">Sobre</a></li>
+                    <li><a href="index.html#secao-3" class="scroll-link" data-target="secao-3">Recursos
+                            Complementares</a></li>
+                    <li><a href="privacidadeetermos.html#cabecalho" class="scroll-link"
+                            data-target="cabecalho">Privacidade e Termos</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <!-- Banner de Cookies -->
+        <div class="cookie-banner" id="cookie-banner">
+            <p>Este site utiliza cookies para otimizar sua experiência de navegação.</p>
+            <a href="privacidadeetermos.html" target="_blank">Saiba mais</a>
+            <div class="container-botao">
+                <button id="accept-all">Aceitar</button>
+                <button id="manage-preferences">Gerenciar Preferências</button>
+                <button id="close-btn">Fechar</button>
+            </div>
+        </div>
+        <!-- Modal de Preferências -->
+        <div class="modal" id="preferences-modal">
+            <div class="modal-content">
+                <span class="close-modal" id="close-modal">&times;</span>
+                <h2>Gerenciar Preferências de Cookies</h2>
+                <form id="preferences-form">
+                    <div>
+                        <input type="checkbox" id="essential-cookies" checked disabled>
+                        <label for="essential-cookies">Cookies Essenciais</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="performance-cookies">
+                        <label for="performance-cookies">Cookies de Desempenho</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="functionality-cookies">
+                        <label for="functionality-cookies">Cookies de Funcionalidade</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="advertising-cookies">
+                        <label for="advertising-cookies">Cookies de Publicidade</label>
+                    </div>
+                    <button type="submit">Salvar Preferências</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="js/menu-secao.js"></script>
+    <script src="js/cookies.js"></script>
+    <script src="js/abrir-aside.js"></script>
+</body>
+
+</html>

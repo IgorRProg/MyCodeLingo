@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCodeLingo | Cursos</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section id="wrapper">
+        <header id="cabecalho">
+            <h1 class="nome-site"><a href="index.html">MyCodeLingo</a></h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#secao-4" class="scroll-link" data-target="secao-4">Cursos</a></li>
+                    <li><a href="index.html#secao-2" class="scroll-link" data-target="secao-2">Sobre</a></li>
+                    <li><a href="index.html#secao-3" class="scroll-link" data-target="secao-3">Recursos Complementares</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="conteudo">
+            <section id="secao-4">
+                <div class="container-texto4">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html#cabecalho" class="scroll-link" data-target="cabecalho">Início</a></li>
+                        <li class="secao-atual">Cursos</li>
+                    </ul>
+                    <h1>Confira nossos <bold>cursos gratuitos!</h1>
+                    <p>Explore e aprimore suas habilidades com nossos cursos de <strong>Inglês Instrumental, HTML, CSS e JavaScript.</strong> Nossos conteúdos são projetados para fornecer uma base sólida e prática em cada área, ajudando você a alcançar seus objetivos de aprendizado de forma eficiente e acessível. Não perca a oportunidade de desenvolver suas competências e impulsionar sua carreira com nossa oferta de cursos <strong>totalmente gratuitos.</strong></p>
+                </div>
+                <div class="container-cursos">
+                    <a href="inglesinstrumental.html#secao-5" class="scroll-link" data-target="secao-5">
+                        <figure class="img-ingles">
+                            <img src="img/img-ingles.png" alt="Inglês Instrumental"/>
+                            <figcaption><strong>Inglês Instrumental</strong></figcaption>
+                        </figure>
+                    </a>
+                    <a href="html.html#secao-5" class="scroll-link" data-target="secao-5">
+                        <figure class="img-html">
+                            <img src="img/img-html.png" alt="HTML"/>
+                            <figcaption><strong>HTML</strong></figcaption>
+                        </figure>
+                    </a>
+                    <a href="css.html#secao-5" class="scroll-link" data-target="secao-5">
+                        <figure class="img-css">
+                            <img src="img/img-css.png" alt="CSS"/>
+                            <figcaption><strong>CSS</strong></figcaption>
+                        </figure>
+                    </a>
+                    <a href="javascript.html#secao-5" class="scroll-link" data-target="secao-5">
+                        <figure class="img-js">
+                            <img src="img/img-js.png" alt="JavaScript"/>
+                            <figcaption><strong>JavaScript</strong></figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer id="rodape">
+            <img class="logotipo-utfpr" src="img/logotipo-utfpr.png" alt="Logotipo UTFPR">
+            <p class="p-rodape">© 2024 MyCodeLingo. Todos os direitos reservados.</p>
+            <nav class="menu-rodape">
+                <h2 class="rodape-h2">Acesso rápido</h2>
+                <ul>
+                    <li><a href="index.html#cabecalho" class="scroll-link" data-target="cabecalho">Início</a></li>
+                    <li><a href="#secao-4" class="scroll-link" data-target="secao-4">Cursos</a></li>
+                    <li><a href="index.html#secao-2" class="scroll-link" data-target="secao-2">Sobre</a></li>
+                    <li><a href="index.html#secao-3" class="scroll-link" data-target="secao-3">Recursos Complementares</a></li>
+                    <li><a href="privacidadeetermos.html#cabecalho" class="scroll-link" data-target="cabecalho">Privacidade e Termos</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <!-- Banner de Cookies -->
+        <div class="cookie-banner" id="cookie-banner">
+            <p>Este site utiliza cookies para otimizar sua experiência de navegação.</p>
+            <a href="privacidadeetermos.html" target="_blank">Saiba mais</a>
+            <div class="container-botao">
+                <button id="accept-all">Aceitar</button>
+                <button id="manage-preferences">Gerenciar Preferências</button>
+                <button id="close-btn">Fechar</button>
+            </div>
+        </div>
+        <!-- Modal de Preferências -->
+        <div class="modal" id="preferences-modal">
+            <div class="modal-content">
+                <span class="close-modal" id="close-modal">&times;</span>
+                <h2>Gerenciar Preferências de Cookies</h2>
+                <form id="preferences-form">
+                    <div>
+                        <input type="checkbox" id="essential-cookies" checked disabled>
+                        <label for="essential-cookies">Cookies Essenciais</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="performance-cookies">
+                        <label for="performance-cookies">Cookies de Desempenho</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="functionality-cookies">
+                        <label for="functionality-cookies">Cookies de Funcionalidade</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="advertising-cookies">
+                        <label for="advertising-cookies">Cookies de Publicidade</label>
+                    </div>
+                    <button type="submit">Salvar Preferências</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="js/menu-secao.js"></script>
+    <script src="js/cookies.js"></script>
+</body>
+</html>

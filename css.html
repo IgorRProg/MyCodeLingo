@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCodeLingo | CSS</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <section id="wrapper">
+        <header id="cabecalho">
+            <h1 class="nome-site"><a href="index.html">MyCodeLingo</a></h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="cursos.html#secao-4" class="scroll-link" data-target="secao-4">Cursos</a></li>
+                    <li><a href="index.html#secao-2" class="scroll-link" data-target="secao-2">Sobre</a></li>
+                    <li><a href="index.html#secao-3" class="scroll-link" data-target="secao-3">Recursos
+                            Complementares</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="conteudo">
+            <section id="secao-5">
+                <div class="container-aside">
+                    <aside id="informacoes-adicionais">
+                        <button id="fechar-aside" class="fechar-botao">X</button>
+                        <h2>Sumário</h2>
+                        <ul>
+                            <li><a href="#introducao">Introdução</a></li>
+                            <li><a href="#estrutura-basica">Seção 1: Estrutura Básica</a></li>
+                            <li><a href="#seletores">Seção 2: Seletores</a></li>
+                            <li><a href="#propriedades-estilo">Seção 3: Propriedades de Estilo</a></li>
+                            <li><a href="#flexbox">Seção 4: Flexbox</a></li>
+                            <li><a href="#animacoes">Seção 5: Animações</a></li>
+                            <li><a href="#grid-layout">Seção 6: Grid Layout</a></li>
+                        </ul>
+                    </aside>
+                    <div class="container-texto5">
+                        <ul class="breadcrumb">
+                            <button id="abrir-aside">
+                                <img src="img/sumario.png" alt="Sumário">
+                            </button>
+                            <li><a href="index.html#cabecalho" class="scroll-link" data-target="cabecalho">Início</a>
+                            </li>
+                            <li><a href="cursos.html#secao-4" class="scroll-link" data-target="secao-4">Cursos</a></li>
+                            <li class="secao-atual">CSS</li>
+                        </ul>
+                        <section id="conteudo-curso">
+                            <h1>CSS3 Avançado</h1>
+                            <h2 id="introducao">Introdução</h2>
+                            <p>CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para definir a aparência
+                                e o
+                                layout de documentos HTML. Com o CSS3, uma evolução do CSS, foram introduzidas novas
+                                funcionalidades e melhorias, permitindo criar designs mais avançados e interativos.
+                                Entre as
+                                novidades estão as animações, transições, flexbox, grid layout e muito mais. Com o CSS3,
+                                é
+                                possível tornar as páginas web mais atraentes e funcionais.</p>
+
+                            <h2 id="estrutura-basica">Seção 1: Estrutura Básica</h2>
+                            <p>Toda página web começa com um documento HTML, e o CSS é utilizado para definir seu
+                                estilo. A
+                                estrutura básica de um documento HTML inclui a declaração do tipo de documento, a
+                                definição
+                                do idioma, os metadados no elemento <code>&lt;head&gt;</code>, e o conteúdo no elemento
+                                <code>&lt;body&gt;</code>. O CSS é referenciado dentro do <code>&lt;head&gt;</code>
+                                usando a
+                                tag <code>&lt;link&gt;</code> para importar um arquivo CSS externo.
+                            </p>
+
+                            <pre><code>&lt;!DOCTYPE html&gt;
+                                &lt;html lang="pt-BR"&gt;
+                                &lt;head&gt;
+                                    &lt;meta charset="UTF-8"&gt;
+                                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                                    &lt;title&gt;Guia de CSS3&lt;/title&gt;
+                                    &lt;link rel="stylesheet" href="styles.css"&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                    &lt;h1&gt;Bem-vindo ao Guia de CSS3&lt;/h1&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt;</code></pre>
+
+                            <h2 id="seletores">Seção 2: Seletores</h2>
+                            <h3>Seletores Simples</h3>
+                            <p><strong>Tipo:</strong> Este seletor seleciona todos os elementos de um tipo específico.
+                                Por
+                                exemplo, <code>p</code> seleciona todos os parágrafos.</p>
+                            <pre><code>p {
+                                color: blue;
+                            }</code></pre>
+                            <p>Isso faz com que todos os textos dentro das tags <code>&lt;p&gt;</code> fiquem azuis.</p>
+
+                            <p><strong>Classe:</strong> Seleciona elementos que possuem uma determinada classe. As
+                                classes
+                                são definidas no HTML usando o atributo <code>class</code>.</p>
+                            <pre><code>.minha-classe {
+                                background-color: yellow;
+                            }</code></pre>
+                            <p>Todos os elementos com a classe <code>minha-classe</code> terão um fundo amarelo.</p>
+
+                            <p><strong>ID:</strong> Seleciona um elemento com um ID específico. IDs são únicos em uma
+                                página
+                                e são definidos no HTML usando o atributo <code>id</code>.</p>
+                            <pre><code>#meu-id {
+                                font-size: 20px;
+                            }</code></pre>
+                            <p>O elemento com o ID <code>meu-id</code> terá o tamanho da fonte definido para 20 pixels.
+                            </p>
+
+                            <h3>Seletores Combinados</h3>
+                            <p><strong>Descendente:</strong> Seleciona elementos que são descendentes de um elemento
+                                específico. Por exemplo, <code>div p</code> seleciona todos os parágrafos dentro de
+                                <code>&lt;div&gt;</code>.
+                            </p>
+                            <pre><code>div p {
+                                color: red;
+                            }</code></pre>
+
+                            <p><strong>Filho:</strong> Seleciona elementos que são filhos diretos de um elemento
+                                específico.
+                                Por exemplo, <code>div &gt; p</code> seleciona apenas os parágrafos que são filhos
+                                diretos
+                                de <code>&lt;div&gt;</code>.</p>
+                            <pre><code>div &gt; p {
+                                color: green;
+                            }</code></pre>
+
+                            <h2 id="propriedades-estilo">Seção 3: Propriedades de Estilo</h2>
+                            <h3>Texto</h3>
+                            <p><strong>color:</strong> Define a cor do texto.</p>
+                            <pre><code>h1 {
+                                color: purple;
+                            }</code></pre>
+                            <p>O texto dentro das tags <code>&lt;h1&gt;</code> ficará roxo.</p>
+
+                            <p><strong>font-size:</strong> Define o tamanho da fonte.</p>
+                            <pre><code>p {
+                                font-size: 16px;
+                            }</code></pre>
+                            <p>O texto dentro das tags <code>&lt;p&gt;</code> terá o tamanho de fonte de 16 pixels.</p>
+
+                            <p><strong>font-family:</strong> Define a família de fontes.</p>
+                            <pre><code>body {
+                                font-family: Arial, sans-serif;
+                            }</code></pre>
+                            <p>Todo o texto no corpo do documento usará a fonte Arial ou, se não estiver disponível, uma
+                                fonte sans-serif genérica.</p>
+
+                            <h3>Fundo</h3>
+                            <p><strong>background-color:</strong> Define a cor de fundo de um elemento.</p>
+                            <pre><code>body {
+                                background-color: #f0f0f0;
+                            }</code></pre>
+                            <p>O fundo da página terá uma cor cinza claro.</p>
+
+                            <p><strong>background-image:</strong> Define uma imagem de fundo para um elemento.</p>
+                            <pre><code>div {
+                                background-image: url('imagem.jpg');
+                            }</code></pre>
+                            <p>O fundo do <code>&lt;div&gt;</code> terá uma imagem.</p>
+
+                            <h3>Box Model</h3>
+                            <p><strong>width e height:</strong> Define a largura e a altura de um elemento.</p>
+                            <pre><code>.box {
+                                width: 200px;
+                                height: 100px;
+                            }</code></pre>
+                            <p>O elemento com a classe <code>box</code> terá 200 pixels de largura e 100 pixels de
+                                altura.
+                            </p>
+
+                            <p><strong>padding:</strong> Define o preenchimento interno de um elemento.</p>
+                            <pre><code>.box {
+                                padding: 20px;
+                            }</code></pre>
+                            <p>O elemento com a classe <code>box</code> terá um preenchimento interno de 20 pixels em
+                                todos
+                                os lados.</p>
+
+                            <p><strong>border:</strong> Define a borda de um elemento.</p>
+                            <pre><code>.box {
+                                border: 2px solid black;
+                            }</code></pre>
+                            <p>O elemento com a classe <code>box</code> terá uma borda sólida preta de 2 pixels.</p>
+
+                            <p><strong>margin:</strong> Define a margem externa de um elemento.</p>
+                            <pre><code>.box {
+                                margin: 10px;
+                            }</code></pre>
+                            <p>O elemento com a classe <code>box</code> terá uma margem externa de 10 pixels em todos os
+                                lados.</p>
+
+                            <h2 id="flexbox">Seção 4: Flexbox</h2>
+                            <h3>Contêiner Flex</h3>
+                            <p><strong>display: flex:</strong> Define um elemento como contêiner flexível, o que permite
+                                usar propriedades flexbox para alinhar e distribuir espaço entre itens no contêiner.</p>
+                            <pre><code>.container {
+                                display: flex;
+                            }</code></pre>
+
+                            <p><strong>justify-content:</strong> Alinha os itens no eixo principal (horizontalmente por
+                                padrão).</p>
+                            <pre><code>.container {
+                                justify-content: center;
+                            }</code></pre>
+                            <p>Os itens dentro do contêiner serão alinhados ao centro do eixo principal.</p>
+
+                            <p><strong>align-items:</strong> Alinha os itens no eixo transversal (verticalmente por
+                                padrão).
+                            </p>
+                            <pre><code>.container {
+                                align-items: center;
+                            }</code></pre>
+                            <p>Os itens dentro do contêiner serão alinhados ao centro do eixo transversal.</p>
+
+                            <h3>Itens Flex</h3>
+                            <p><strong>flex-grow:</strong> Define a capacidade de um item de crescer se houver espaço
+                                disponível.</p>
+                            <pre><code>.item {
+                                flex-grow: 1;
+                            }</code></pre>
+
+                            <p><strong>flex-shrink:</strong> Define a capacidade de um item de encolher se necessário.
+                            </p>
+                            <pre><code>.item {
+                                flex-shrink: 1;
+                            }</code></pre>
+
+                            <p><strong>flex-basis:</strong> Define a base do tamanho de um item antes de o espaço
+                                disponível
+                                ser distribuído.</p>
+                            <pre><code>.item {
+                                flex-basis: 100px;
+                            }</code></pre>
+
+                            <h2 id="animacoes">Seção 5: Animações</h2>
+                            <h3>Transições</h3>
+                            <p><strong>transition:</strong> Adiciona uma transição suave entre os estados de um
+                                elemento.
+                            </p>
+                            <pre><code>.element {
+                                transition: all 0.3s ease;
+                            }</code></pre>
+                            <p>Qualquer mudança de estilo no elemento ocorrerá suavemente em 0,3 segundos.</p>
+
+                            <h3>Animações Keyframes</h3>
+                            <p><strong>@keyframes:</strong> Define uma animação com vários estados.</p>
+                            <pre><code>@keyframes exemplo {
+                                from { opacity: 0; }
+                                to { opacity: 1; }
+                            }
+
+                            .element {
+                                animation: exemplo 2s infinite;
+                            }</code></pre>
+                            <p>O elemento passará de opaco para transparente em uma animação que dura 2 segundos e se
+                                repete
+                                infinitamente.</p>
+
+                            <h2 id="grid-layout">Seção 6: Grid Layout</h2>
+                            <h3>Contêiner Grid</h3>
+                            <p><strong>display: grid:</strong> Define um elemento como contêiner de grid.</p>
+                            <pre><code>.grid-container {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                grid-template-rows: auto;
+                            }</code></pre>
+                            <p>O contêiner será dividido em duas colunas iguais, e as linhas serão automaticamente
+                                ajustadas
+                                conforme o conteúdo.</p>
+
+                            <h3>Itens Grid</h3>
+                            <p><strong>grid-column e grid-row:</strong> Define a posição e o tamanho dos itens dentro do
+                                grid.</p>
+                            <pre><code>.grid-item {
+                                grid-column: 1 / 3;
+                                grid-row: 1 / 2;
+                            }</code></pre>
+                            <p>O item ocupará a primeira e a segunda coluna e a primeira linha do grid.</p>
+                            <h2><a href="quiz-css.html">Testar meus conhecimentos no Quiz</a></h2>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="rodape">
+            <img class="logotipo-utfpr" src="img/logotipo-utfpr.png" alt="Logotipo UTFPR">
+            <p class="p-rodape">© 2024 MyCodeLingo. Todos os direitos reservados.</p>
+            <nav class="menu-rodape">
+                <h2 class="rodape-h2">Acesso rápido</h2>
+                <ul>
+                    <li><a href="index.html#cabecalho" class="scroll-link" data-target="cabecalho">Início</a></li>
+                    <li><a href="cursos.html#secao-4" class="scroll-link" data-target="secao-4">Cursos</a></li>
+                    <li><a href="index.html#secao-2" class="scroll-link" data-target="secao-2">Sobre</a></li>
+                    <li><a href="index.html#secao-3" class="scroll-link" data-target="secao-3">Recursos
+                            Complementares</a></li>
+                    <li><a href="privacidadeetermos.html#cabecalho" class="scroll-link"
+                            data-target="cabecalho">Privacidade e Termos</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <!-- Banner de Cookies -->
+        <div class="cookie-banner" id="cookie-banner">
+            <p>Este site utiliza cookies para otimizar sua experiência de navegação.</p>
+            <a href="privacidadeetermos.html" target="_blank">Saiba mais</a>
+            <div class="container-botao">
+                <button id="accept-all">Aceitar</button>
+                <button id="manage-preferences">Gerenciar Preferências</button>
+                <button id="close-btn">Fechar</button>
+            </div>
+        </div>
+        <!-- Modal de Preferências -->
+        <div class="modal" id="preferences-modal">
+            <div class="modal-content">
+                <span class="close-modal" id="close-modal">&times;</span>
+                <h2>Gerenciar Preferências de Cookies</h2>
+                <form id="preferences-form">
+                    <div>
+                        <input type="checkbox" id="essential-cookies" checked disabled>
+                        <label for="essential-cookies">Cookies Essenciais</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="performance-cookies">
+                        <label for="performance-cookies">Cookies de Desempenho</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="functionality-cookies">
+                        <label for="functionality-cookies">Cookies de Funcionalidade</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="advertising-cookies">
+                        <label for="advertising-cookies">Cookies de Publicidade</label>
+                    </div>
+                    <button type="submit">Salvar Preferências</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="js/menu-secao.js"></script>
+    <script src="js/cookies.js"></script>
+    <script src="js/abrir-aside.js"></script>
+</body>
+
+</html>

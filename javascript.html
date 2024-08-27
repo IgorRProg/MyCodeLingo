@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCodeLingo | JavaScript</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section id="wrapper">
+        <header id="cabecalho">
+            <h1 class="nome-site"><a href="index.html">MyCodeLingo</a></h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="cursos.html#secao-4" class="scroll-link" data-target="secao-4">Cursos</a></li>
+                    <li><a href="index.html#secao-2" class="scroll-link" data-target="secao-2">Sobre</a></li>
+                    <li><a href="index.html#secao-3" class="scroll-link" data-target="secao-3">Recursos Complementares</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="conteudo">
+            <section id="secao-5">
+                <div class="container-aside">
+                    <aside id="informacoes-adicionais">
+                        <button id="fechar-aside" class="fechar-botao">X</button>
+                        <h2>Sumário</h2>
+                        <ul>
+                            <li><a href="#introducao">Introdução</a></li>
+                            <li><a href="#estruturas-basicas">Seção 1: Estruturas Básicas</a></li>
+                            <li><a href="#funcoes">Seção 2: Funções</a></li>
+                            <li><a href="#operadores-basicos">Seção 3: Operadores Básicos</a></li>
+                            <li><a href="#dom">Seção 4: Manipulação do DOM</a></li>
+                            <li><a href="#utilizacao">Seção 5: Utilização no Front-End e Back-End</a></li>
+                        </ul>
+                    </aside>
+                    <div class="container-texto5">
+                        <ul class="breadcrumb">
+                            <button id="abrir-aside">
+                                <img src="img/sumario.png" alt="Sumário">
+                            </button>
+                            <li><a href="index.html#cabecalho" class="scroll-link" data-target="cabecalho">Início</a></li>
+                            <li><a href="cursos.html#secao-4" class="scroll-link" data-target="secao-4">Cursos</a></li>
+                            <li class="secao-atual">JavaScript</li>
+                        </ul>
+                        <section id="conteudo-curso">
+                            <h1>Introdução ao JavaScript</h1>
+                            <h2>Introdução</h2>
+                            <p id="introducao">JavaScript é uma das linguagens de programação mais populares e amplamente usadas no desenvolvimento web. Com JavaScript, você pode criar experiências interativas e dinâmicas tanto no lado do cliente (front-end) quanto no lado do servidor (back-end).</p>
+                            
+                            <h2 id="estruturas-basicas">Seção 1: Estruturas Básicas</h2>
+                            <p><strong>Variáveis:</strong> São usadas para armazenar dados. Em JavaScript, você pode declarar variáveis usando <code>var</code>, <code>let</code>, e <code>const</code>.</p>
+                            <p><strong>Tipos de Dados:</strong> Incluem <code>number</code>, <code>string</code>, <code>boolean</code>, <code>undefined</code>, <code>null</code>, <code>symbol</code> (ES6), e <code>bigint</code> (ES11).</p>
+                            <p><strong>Estruturas de Controle:</strong> Permitem manipular o fluxo de execução do código, como <code>if</code>, <code>else if</code>, <code>else</code>, <code>switch</code>, <code>for</code>, <code>while</code>, e <code>do...while</code>.</p>
+
+                            <h2 id="funcoes">Seção 2: Funções</h2>
+                            <p>Funções são blocos de código reutilizáveis que executam tarefas específicas. Elas podem receber parâmetros e retornar valores.</p>
+                            <p><strong>Declaração de Funções:</strong> Pode ser feita com a sintaxe tradicional ou com a sintaxe de função de seta (arrow function).</p>
+                            <p><strong>Funções Anônimas:</strong> Funções que podem ser atribuídas a variáveis e usadas como argumentos em outras funções.</p>
+
+                            <h2 id="operadores-basicos">Seção 3: Operadores Básicos</h2>
+                            <p>JavaScript possui operadores para realizar operações em variáveis e valores, incluindo aritméticos, relacionamentos e lógicos.</p>
+                            <p>Operadores aritméticos (+, -, *, /), operadores de comparação (==, ===, !=, !==, >, <), e operadores lógicos (&&, ||, !).</p>
+
+                            <h2 id="dom">Seção 4: Manipulação do DOM</h2>
+                            <p>O DOM (Document Object Model) permite que você manipule e altere o conteúdo e estilo das páginas web.</p>
+                            <p><strong>Selecionar Elementos:</strong> Métodos como <code>getElementById</code>, <code>querySelector</code>, e <code>querySelectorAll</code> são usados para selecionar elementos.</p>
+                            <p><strong>Alterar Conteúdo e Estilo:</strong> Você pode usar JavaScript para alterar o conteúdo e estilo dos elementos selecionados.</p>
+                            <p><strong>Adicionar e Remover Elementos:</strong> Você pode adicionar novos elementos ao DOM e remover elementos existentes.</p>
+                            
+                            <h2 id="utilizacao">Seção 5: Utilização no Front-End e Back-End</h2>
+                            <p><strong>Front-End:</strong> No front-end, JavaScript é usado para criar interatividade nas páginas web, manipular o DOM, e gerenciar eventos de usuário.</p>
+                            <p><strong>Back-End:</strong> No back-end, JavaScript é usado com plataformas como Node.js para criar servidores web, manipular bancos de dados, e processar dados.</p>
+                            <h2><a href="quiz-javascript.html">Testar meus conhecimentos no Quiz</a></h2>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="rodape">
+            <img class="logotipo-utfpr" src="img/logotipo-utfpr.png" alt="Logotipo UTFPR">
+            <p class="p-rodape">© 2024 MyCodeLingo. Todos os direitos reservados.</p>
+            <nav class="menu-rodape">
+                <h2 class="rodape-h2">Acesso rápido</h2>
+                <ul>
+                    <li><a href="index.html#cabecalho" class="scroll-link" data-target="cabecalho">Início</a></li>
+                    <li><a href="cursos.html#secao-4" class="scroll-link" data-target="secao-4">Cursos</a></li>
+                    <li><a href="index.html#secao-2" class="scroll-link" data-target="secao-2">Sobre</a></li>
+                    <li><a href="index.html#secao-3" class="scroll-link" data-target="secao-3">Recursos Complementares</a></li>
+                    <li><a href="privacidadeetermos.html#cabecalho" class="scroll-link" data-target="cabecalho">Privacidade e Termos</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <!-- Banner de Cookies -->
+        <div class="cookie-banner" id="cookie-banner">
+            <p>Este site utiliza cookies para otimizar sua experiência de navegação.</p>
+            <a href="privacidadeetermos.html" target="_blank">Saiba mais</a>
+            <div class="container-botao">
+                <button id="accept-all">Aceitar</button>
+                <button id="manage-preferences">Gerenciar Preferências</button>
+                <button id="close-btn">Fechar</button>
+            </div>
+        </div>
+        <!-- Modal de Preferências -->
+        <div class="modal" id="preferences-modal">
+            <div class="modal-content">
+                <span class="close-modal" id="close-modal">&times;</span>
+                <h2>Gerenciar Preferências de Cookies</h2>
+                <form id="preferences-form">
+                    <div>
+                        <input type="checkbox" id="essential-cookies" checked disabled>
+                        <label for="essential-cookies">Cookies Essenciais</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="performance-cookies">
+                        <label for="performance-cookies">Cookies de Desempenho</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="functionality-cookies">
+                        <label for="functionality-cookies">Cookies de Funcionalidade</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="advertising-cookies">
+                        <label for="advertising-cookies">Cookies de Publicidade</label>
+                    </div>
+                    <button type="submit">Salvar Preferências</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="js/menu-secao.js"></script>
+    <script src="js/cookies.js"></script>
+    <script src="js/abrir-aside.js"></script>
+</body>
+</html>

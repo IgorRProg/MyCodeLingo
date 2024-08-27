@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Inglês Instrumental</title>
+    <link rel="icon" href="img/favicon.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            font-weight: bold;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .result {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Quiz: Inglês Instrumental para Programadores</h1>
+
+<div class="question">
+    <p>1. O que é uma "Variable" em programação?</p>
+    <div class="options">
+        <input type="radio" name="q1" value="a"> a) Um bloco de código reutilizável.<br>
+        <input type="radio" name="q1" value="b"> b) Um espaço de armazenamento para valores que podem mudar ao longo da execução do programa.<br>
+        <input type="radio" name="q1" value="c"> c) Uma estrutura de controle que repete um bloco de código.<br>
+        <input type="radio" name="q1" value="d"> d) Um tipo de dado fixo.<br>
+    </div>
+</div>
+
+<div class="question">
+    <p>2. Qual é a função de um "Loop"?</p>
+    <div class="options">
+        <input type="radio" name="q2" value="a"> a) Definir uma variável.<br>
+        <input type="radio" name="q2" value="b"> b) Repetir um bloco de código enquanto uma condição específica for verdadeira.<br>
+        <input type="radio" name="q2" value="c"> c) Devolver um valor e encerrar a execução de uma função.<br>
+        <input type="radio" name="q2" value="d"> d) Declarar uma função.<br>
+    </div>
+</div>
+
+<div class="question">
+    <p>3. Qual comando é usado para executar um bloco de código se uma condição for verdadeira?</p>
+    <div class="options">
+        <input type="radio" name="q3" value="a"> a) Else<br>
+        <input type="radio" name="q3" value="b"> b) Return<br>
+        <input type="radio" name="q3" value="c"> c) If<br>
+        <input type="radio" name="q3" value="d"> d) For<br>
+    </div>
+</div>
+
+<div class="question">
+    <p>4. Qual das opções abaixo descreve o que é um "Array"?</p>
+    <div class="options">
+        <input type="radio" name="q4" value="a"> a) Um espaço de armazenamento fixo.<br>
+        <input type="radio" name="q4" value="b"> b) Um bloco de código reutilizável.<br>
+        <input type="radio" name="q4" value="c"> c) Uma coleção de elementos ordenados acessíveis por índices.<br>
+        <input type="radio" name="q4" value="d"> d) Um tipo de dado primitivo.<br>
+    </div>
+</div>
+
+<div class="question">
+    <p>5. O que é um "Pull Request" em desenvolvimento de software?</p>
+    <div class="options">
+        <input type="radio" name="q5" value="a"> a) Uma solicitação para revisar e integrar mudanças no código.<br>
+        <input type="radio" name="q5" value="b"> b) Um erro ou defeito no código.<br>
+        <input type="radio" name="q5" value="c"> c) Uma combinação de mudanças de diferentes versões do código.<br>
+        <input type="radio" name="q5" value="d"> d) Ação de salvar mudanças no repositório de código.<br>
+    </div>
+</div>
+
+<div class="question">
+    <p>6. O que é o "API Reference" em uma documentação técnica?</p>
+    <div class="options">
+        <input type="radio" name="q6" value="a"> a) Passos para instalar uma ferramenta.<br>
+        <input type="radio" name="q6" value="b"> b) Uma visão geral da ferramenta ou biblioteca.<br>
+        <input type="radio" name="q6" value="c"> c) Detalhes técnicos sobre as funções, métodos e classes disponíveis.<br>
+        <input type="radio" name="q6" value="d"> d) Exemplos práticos de como utilizar uma ferramenta.<br>
+    </div>
+</div>
+
+<div class="question">
+    <p>7. Qual ferramenta é usada para controle de versão no desenvolvimento de software?</p>
+    <div class="options">
+        <input type="radio" name="q7" value="a"> a) Slack<br>
+        <input type="radio" name="q7" value="b"> b) Trello<br>
+        <input type="radio" name="q7" value="c"> c) Git<br>
+        <input type="radio" name="q7" value="d"> d) Visual Studio Code<br>
+    </div>
+</div>
+
+<div class="question">
+    <p>8. O que significa "Merge" no contexto do Git?</p>
+    <div class="options">
+        <input type="radio" name="q8" value="a"> a) Salvar mudanças no repositório.<br>
+        <input type="radio" name="q8" value="b"> b) Revisar o código de outro desenvolvedor.<br>
+        <input type="radio" name="q8" value="c"> c) Combinar mudanças de diferentes versões do código em uma única versão.<br>
+        <input type="radio" name="q8" value="d"> d) Criar um novo repositório de código.<br>
+    </div>
+</div>
+
+<div class="question">
+    <p>9. Qual das seguintes opções é uma IDE popular para desenvolvimento em Java?</p>
+    <div class="options">
+        <input type="radio" name="q9" value="a"> a) IntelliJ IDEA<br>
+        <input type="radio" name="q9" value="b"> b) Slack<br>
+        <input type="radio" name="q9" value="c"> c) Trello<br>
+        <input type="radio" name="q9" value="d"> d) Visual Studio Code<br>
+    </div>
+</div>
+
+<div class="question">
+    <p>10. Em uma conversa de equipe, como você poderia reportar um bug?</p>
+    <div class="options">
+        <input type="radio" name="q10" value="a"> a) "Can you merge my changes?"<br>
+        <input type="radio" name="q10" value="b"> b) "I found a bug in the login functionality."<br>
+        <input type="radio" name="q10" value="c"> c) "Let's refactor this code."<br>
+        <input type="radio" name="q10" value="d"> d) "Please install the new update."<br>
+    </div>
+</div>
+
+<button onclick="checkAnswers()">Verificar Respostas</button>
+
+<div class="result" id="result"></div>
+
+<script>
+    const answers = {
+        q1: "b",
+        q2: "b",
+        q3: "c",
+        q4: "c",
+        q5: "a",
+        q6: "c",
+        q7: "c",
+        q8: "c",
+        q9: "a",
+        q10: "b"
+    };
+
+    function checkAnswers() {
+        let score = 0;
+        for (let i = 1; i <= 10; i++) {
+            const question = document.querySelector(`input[name="q${i}"]:checked`);
+            if (question && question.value === answers[`q${i}`]) {
+                score++;
+            }
+        }
+        const result = document.getElementById("result");
+        result.textContent = `Você acertou ${score} de 10 questões.`;
+    }
+</script>
+
+</body>
+</html>

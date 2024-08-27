@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: CSS3</title>
+    <link rel="icon" href="img/favicon.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            font-weight: bold;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .result {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Quiz: CSS3</h1>
+
+<div class="question">
+    <p>1. Qual é a função do <code>display: flex</code> em CSS?</p>
+    <div class="options">
+        <input type="radio" name="q1" value="a"> a) Define a largura de um elemento<br>
+        <input type="radio" name="q1" value="b"> b) Define um elemento como contêiner flexível<br>
+        <input type="radio" name="q1" value="c"> c) Adiciona uma imagem de fundo<br>
+        <input type="radio" name="q1" value="d"> d) Define o tamanho da fonte<br>
+    </div>
+</div>
+
+<div class="question">
+    <p>2. Qual seletor CSS é usado para selecionar todos os elementos <code>&lt;p&gt;</code> em uma página?</p>
+    <div class="options">
+        <input type="radio" name="q2" value="a"> a) .p<br>
+        <input type="radio" name="q2" value="b"> b) #p<br>
+        <input type="radio" name="q2" value="c"> c) p<br>
+        <input type="radio" name="q2" value="d"> d) div p<br>
+    </div>
+</div>
+
+<div class="question">
+    <p>3. Como você seleciona um elemento com a classe <code>minha-classe</code>?</p>
+    <div class="options">
+        <input type="radio" name="q3" value="a"> a) #minha-classe<br>
+        <input type="radio" name="q3" value="b"> b) .minha-classe<br>
+        <input type="radio" name="q3" value="c"> c) minha-classe<br>
+        <input type="radio" name="q3" value="d"> d) [minha-classe]<br>
+    </div>
+</div>
+
+<div class="question">
+    <p>4. Qual propriedade CSS define a cor de fundo de um elemento?</p>
+    <div class="options">
+        <input type="radio" name="q4" value="a"> a) background-color<br>
+        <input type="radio" name="q4" value="b"> b) color<br>
+        <input type="radio" name="q4" value="c"> c) font-size<br>
+        <input type="radio" name="q4" value="d"> d) border<br>
+    </div>
+</div>
+
+<div class="question">
+    <p>5. O que faz a propriedade <code>flex-grow</code> em um item flexível?</p>
+    <div class="options">
+        <input type="radio" name="q5" value="a"> a) Define a base do tamanho do item<br>
+        <input type="radio" name="q5" value="b"> b) Permite que o item cresça se houver espaço disponível<br>
+        <input type="radio" name="q5" value="c"> c) Define o tamanho da borda do item<br>
+        <input type="radio" name="q5" value="d"> d) Alinha o item no eixo transversal<br>
+    </div>
+</div>
+
+<div class="question">
+    <p>6. Qual é o valor padrão da propriedade <code>align-items</code> em um contêiner flexível?</p>
+    <div class="options">
+        <input type="radio" name="q6" value="a"> a) center<br>
+        <input type="radio" name="q6" value="b"> b) flex-start<br>
+        <input type="radio" name="q6" value="c"> c) flex-end<br>
+        <input type="radio" name="q6" value="d"> d) stretch<br>
+    </div>
+</div>
+
+<div class="question">
+    <p>7. Como você define uma animação em CSS que deve durar 2 segundos e se repetir infinitamente?</p>
+    <div class="options">
+        <input type="radio" name="q7" value="a"> a) animation: nome 2s infinite;<br>
+        <input type="radio" name="q7" value="b"> b) transition: nome 2s infinite;<br>
+        <input type="radio" name="q7" value="c"> c) animation: nome 2s repeat;<br>
+        <input type="radio" name="q7" value="d"> d) transition: nome 2s;<br>
+    </div>
+</div>
+
+<div class="question">
+    <p>8. Qual seletor CSS é usado para selecionar um elemento com o ID <code>meu-id</code>?</p>
+    <div class="options">
+        <input type="radio" name="q8" value="a"> a) #meu-id<br>
+        <input type="radio" name="q8" value="b"> b) .meu-id<br>
+        <input type="radio" name="q8" value="c"> c) meu-id<br>
+        <input type="radio" name="q8" value="d"> d) [meu-id]<br>
+    </div>
+</div>
+
+<div class="question">
+    <p>9. Qual propriedade CSS define a margem externa de um elemento?</p>
+    <div class="options">
+        <input type="radio" name="q9" value="a"> a) padding<br>
+        <input type="radio" name="q9" value="b"> b) border<br>
+        <input type="radio" name="q9" value="c"> c) margin<br>
+        <input type="radio" name="q9" value="d"> d) width<br>
+    </div>
+</div>
+
+<div class="question">
+    <p>10. Qual é a função da propriedade <code>grid-template-columns</code> em um contêiner de grid?</p>
+    <div class="options">
+        <input type="radio" name="q10" value="a"> a) Define a largura das colunas no grid<br>
+        <input type="radio" name="q10" value="b"> b) Define a altura das linhas no grid<br>
+        <input type="radio" name="q10" value="c"> c) Define a cor de fundo do grid<br>
+        <input type="radio" name="q10" value="d"> d) Define o tamanho da borda dos itens no grid<br>
+    </div>
+</div>
+
+<button onclick="checkAnswers()">Verificar Respostas</button>
+
+<div class="result" id="result"></div>
+
+<script>
+    const answers = {
+        q1: "b",
+        q2: "c",
+        q3: "b",
+        q4: "a",
+        q5: "b",
+        q6: "d",
+        q7: "a",
+        q8: "a",
+        q9: "c",
+        q10: "a"
+    };
+
+    function checkAnswers() {
+        let score = 0;
+        for (let i = 1; i <= 10; i++) {
+            const question = document.querySelector(`input[name="q${i}"]:checked`);
+            if (question && question.value === answers[`q${i}`]) {
+                score++;
+            }
+        }
+        const result = document.getElementById("result");
+        result.textContent = `Você acertou ${score} de 10 questões.`;
+    }
+</script>
+
+</body>
+</html>
